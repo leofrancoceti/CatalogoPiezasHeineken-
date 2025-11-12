@@ -33,24 +33,25 @@ Asegúrate de tener instalado **Python 3.x**.
 Luego, instala las dependencias necesarias ejecutando:
 pip install pillow
 ##  Estructura del proyecto
-- ** 📁 Sistema_Piezas_Heineken/
-- ** ├── 📄 main.py                 # Archivo principal del programa
-├── 📄 conexion.py             # Conexión y manejo de la base de datos
-├── 📄 PiezasDatoa.py 
-├── 📁 images/                 # Carpeta para imágenes predeterminadas
-│   ├── default.png
-│   └── logo_heineken.png
-├── 📁 data/                   # Carpeta de base de datos SQLite
-│   └── piezas.db
-├── 📄 README.md               # Documentación del proyecto
-└── 📄 requirements.txt        # Dependencias del proyecto
+ **📁 Sistema_Piezas_Heineken/**
+**├── 📄 main.py**                # Archivo principal del programa
+**├── 📄 conexion.py**           # Conexión y manejo de la base de datos
+**├── 📄 PiezasDatoa.py**
+ **📁 images/**                 # Carpeta para imágenes predeterminadas
+    **├── default.png**
+│   **└── logo_heineken.png**
+**├── 📁 data/**                   # Carpeta de base de datos SQLite
+   **└── piezas.db**
+**├── 📄 README.md**               # Documentación del proyecto
+**└── 📄 requirements.txt**        # Dependencias del proyecto
 
 ### Manual de Usuario
- 1. Inicio del Sistema
+ **1. Inicio del Sistema**
 
-Al abrir la aplicación, se mostrará la ventana principal con el logotipo de Heineken y un menú de opciones.
+Al abrir la aplicación, se mostrará la ventana principal y un menú de opciones.
+<img width="289" height="139" alt="image" src="https://github.com/user-attachments/assets/23588181-7ba4-4e15-85e3-7b6a3d5c8a1d" />
 
- 2. Registrar una Nueva Pieza
+ **2. Registrar una Nueva Pieza**
 
 Haz clic en “Agregar Pieza”.
 
@@ -68,14 +69,17 @@ Imagen (opcional)
 
 Presiona “Guardar”.
 La pieza será registrada y aparecerá en la tabla principal.
+<img width="669" height="552" alt="image" src="https://github.com/user-attachments/assets/ad478a0c-8b67-428d-89ec-3fa08d2bb7e5" />
 
-3. Consultar Piezas
+**3. Consultar Piezas**
 
 En la parte superior, encontrarás una barra de búsqueda.
 
-Escribe el nombre o código de la pieza para filtrar los resultados.
+Escribe el nombre o código de la pieza para filtrar los resultados
+<img width="914" height="160" alt="image" src="https://github.com/user-attachments/assets/0421ea37-8e4d-4b0e-ad4c-f6a8d2d89dc8" />
 
- 4. Actualizar Datos
+
+ **4. Actualizar Datos**
 
 Selecciona una pieza de la lista.
 
@@ -84,20 +88,23 @@ Presiona “Editar”.
 Modifica los datos necesarios.
 
 Guarda los cambios con “Actualizar”.
+<img width="1293" height="761" alt="image" src="https://github.com/user-attachments/assets/e46b3599-4625-4fe7-b30a-0c13bd25c7c3" />
 
- 5. Eliminar Piezas
+ **5. Eliminar Piezas**
 
 Selecciona la pieza que deseas eliminar.
 
 Presiona “Eliminar”.
 
 Confirma la acción.
+<img width="690" height="548" alt="image" src="https://github.com/user-attachments/assets/c783d83b-538e-4d4d-8605-5e3965501909" />
 
- 6. Visualizar Imagen
+
+ **6. Visualizar Imagen**
 
 Al seleccionar una pieza, la imagen asociada se mostrará automáticamente.
+<img width="853" height="626" alt="image" src="https://github.com/user-attachments/assets/03c672b0-9266-4fb5-9506-e51894024ace" />
 
-Si no existe una imagen, se mostrará la predeterminada (default.png).
 
 ## Base de Datos
 
@@ -116,14 +123,15 @@ imagen	BLOB	Imagen en formato binario
 
 ## Funcionalidades Clave
 
-- ** CRUD completo (crear, leer, actualizar, eliminar)
-- ** Almacenamiento local (sin conexión requerida)
-- ** Búsqueda dinámica por nombre o código
-- ** Vista previa de imágenes
-- ** Diseño profesional con ttk
-- ** Compatible con Windows, macOS y Linux
-
+**CRUD completo (crear, leer, actualizar, eliminar)**
+**Almacenamiento local (sin conexión requerida)**
+**Búsqueda dinámica por nombre o código**
+**Vista previa de imágenes**
+**Diseño profesional con ttk**
+**Compatible con Windows, macOS y Linux**
+## Desarrollado en Guadalajara, Jalisco
 ###Autor
+
 
 Leonardo Franco Pérez
 📍 Guadalajara, Jalisco
@@ -138,5 +146,5 @@ El sistema fue diseñado para optimizar los procesos de inventario y mantenimien
 <img width="1917" height="888" alt="image" src="https://github.com/user-attachments/assets/86b1e1ed-1da0-480c-9206-e6883c9f0653" />
 <img width="1858" height="926" alt="image" src="https://github.com/user-attachments/assets/8075a1d0-fbeb-4fe0-a31e-b4ed0f7d350a" />
 
-## Desarrollado en Guadalajara, Jalisco
+
 
