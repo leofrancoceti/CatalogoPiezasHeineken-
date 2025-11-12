@@ -33,8 +33,8 @@ Asegúrate de tener instalado **Python 3.x**.
 Luego, instala las dependencias necesarias ejecutando:
 pip install pillow
 ##  Estructura del proyecto
-📁 Sistema_Piezas_Heineken/
-├── 📄 main.py                 # Archivo principal del programa
+- ** 📁 Sistema_Piezas_Heineken/
+- ** ├── 📄 main.py                 # Archivo principal del programa
 ├── 📄 conexion.py             # Conexión y manejo de la base de datos
 ├── 📄 PiezasDatoa.py 
 ├── 📁 images/                 # Carpeta para imágenes predeterminadas
@@ -116,13 +116,12 @@ imagen	BLOB	Imagen en formato binario
 
 ## Funcionalidades Clave
 
-✅ CRUD completo (crear, leer, actualizar, eliminar)
-✅ Almacenamiento local (sin conexión requerida)
-✅ Búsqueda dinámica por nombre o código
-✅ Vista previa de imágenes
-✅ Diseño profesional con ttk
-✅ Compatible con Windows, macOS y Linux
-.
+- ** CRUD completo (crear, leer, actualizar, eliminar)
+- ** Almacenamiento local (sin conexión requerida)
+- ** Búsqueda dinámica por nombre o código
+- ** Vista previa de imágenes
+- ** Diseño profesional con ttk
+- ** Compatible con Windows, macOS y Linux
 
 ###Autor
 
@@ -139,9 +138,5 @@ El sistema fue diseñado para optimizar los procesos de inventario y mantenimien
 <img width="1917" height="888" alt="image" src="https://github.com/user-attachments/assets/86b1e1ed-1da0-480c-9206-e6883c9f0653" />
 <img width="1858" height="926" alt="image" src="https://github.com/user-attachments/assets/8075a1d0-fbeb-4fe0-a31e-b4ed0f7d350a" />
 
-##Desarrollado en Guadalajara, Jalisco
+## Desarrollado en Guadalajara, Jalisco
 
-
-
-```bash
-pip install pillow
