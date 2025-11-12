@@ -1,8 +1,5 @@
 🏭 Sistema de Gestión de Piezas - Heineken
-📋 Descripción del Proyecto
-Sistema completo de gestión de inventario de piezas desarrollado para Heineken, que permite registrar, consultar, actualizar y eliminar piezas con soporte para imágenes y búsqueda avanzada.
-
-https://via.placeholder.com/800x400?text=Interfaz+Principal+del+Sistema
+📋 Sistema completo de gestión de inventario de piezas desarrollado para Heineken, que permite registrar, consultar, actualizar y eliminar piezas con soporte para imágenes y búsqueda avanzada.
 
 🚀 Tecnologías Utilizadas
 Backend
@@ -28,18 +25,23 @@ Manejo de BLOB - Almacenamiento de imágenes en BD
 
 🛠️ Configuración e Instalación
 Prerrequisitos
-bash
+Bash
+
 # Instalar dependencias
 pip install pillow
 Estructura de Archivos
-text
+Plaintext
+
 ProyectoPiezas/
 ├── main.py              # Aplicación principal
 ├── PiezasDatos.py       # Lógica de negocio y CRUD
 ├── conexion.py          # Gestión de conexión a BD
-└── Piezas.db           # Base de datos (se crea automáticamente)
+└── Piezas.db            # Base de datos (se crea automáticamente)
 Configuración de Base de Datos
-python
+La ruta de la base de datos es personalizable.
+
+Python
+
 # En conexion.py - RUTA PERSONALIZABLE
 conexion = sqlite3.connect(r"\\LEONARDOFRANCO\PiezasDB\Piezas.db")
 
@@ -47,8 +49,6 @@ conexion = sqlite3.connect(r"\\LEONARDOFRANCO\PiezasDB\Piezas.db")
 conexion = sqlite3.connect("ruta/personalizada/Piezas.db")
 📖 Manual de Usuario
 1. 🆕 Agregar Nueva Pieza
-https://via.placeholder.com/600x300?text=Formulario+de+Registro
-
 Pasos:
 
 Completar campos obligatorios:
@@ -69,97 +69,96 @@ Material - Material de fabricación
 
 Agregar imágenes (opcional):
 
-Click en "Agregar imagen" debajo de cada preview
+Click en "Agregar imagen" debajo de cada preview.
 
-Formatos soportados: JPG, PNG, BMP, GIF
+Formatos soportados: JPG, PNG, BMP, GIF.
 
-Máximo 3 imágenes por pieza
+Máximo 3 imágenes por pieza.
 
 Guardar:
 
-Click en botón "Agregar"
+Click en botón "Agregar".
 
-Confirmación de éxito
+Recibirás una confirmación de éxito.
 
 2. 🔍 Consultar Pieza Existente
-https://via.placeholder.com/600x300?text=Consulta+de+Piezas
-
 Métodos de consulta:
 
 A. Por ID específico:
 
-Ingresar ID Pieza en campo superior
+Ingresar ID Pieza en campo superior.
 
-Click en "Consultar"
+Click en "Consultar".
 
-Sistema carga automáticamente todos los datos
+El sistema carga automáticamente todos los datos y las vistas previas de las imágenes.
 
 B. Búsqueda por filtros:
 
-Seleccionar criterio: Línea, Equipo, Tipo o Material
+Seleccionar criterio: Línea, Equipo, Tipo o Material.
 
-Ingresar texto a buscar
+Ingresar texto a buscar.
 
-Click en "Buscar"
+Click en "Buscar".
 
-Resultados filtrados en tabla
+Los resultados se filtrarán en la tabla.
 
 C. Selección desde tabla:
 
-Click en cualquier registro de la tabla
+Click en cualquier registro de la tabla "Piezas Registradas".
 
-Datos se cargan automáticamente
+Los datos se cargan automáticamente en el formulario.
 
 3. ✏️ Actualizar Pieza
-https://via.placeholder.com/600x300?text=Actualizaci%C3%B3n+de+Datos
-
 Proceso:
 
-Primero consultar la pieza a modificar
+Primero consultar la pieza a modificar (usando cualquiera de los métodos anteriores).
 
-Realizar cambios en campos necesarios
+Realizar los cambios necesarios en los campos de texto.
 
-Reemplazar imágenes si es necesario
+Reemplazar imágenes si es necesario usando "Agregar imagen".
 
-Click en "Actualizar"
+Click en "Actualizar".
 
-Confirmar cambios
+Confirmar los cambios.
 
 4. 🗑️ Eliminar Pieza
 Proceso seguro:
 
-Consultar pieza a eliminar
+Consultar la pieza que deseas eliminar.
 
-Click en "Eliminar"
+Click en "Eliminar".
 
-Confirmación de seguridad aparece
+Aparecerá una confirmación de seguridad.
 
-Click "Yes" para confirmar eliminación
+Click en "Yes" para confirmar la eliminación permanente.
 
 5. 🖼️ Gestión de Imágenes
-https://via.placeholder.com/600x300?text=Gesti%C3%B3n+de+Im%C3%A1genes
+El sistema permite una gestión visual completa de las imágenes de las piezas.
 
 Funcionalidades:
 
-Vista previa de miniaturas (120x120px)
+Vista previa de miniaturas (120x120px) en la pantalla principal.
 
-Vista completa con información contextual
+Vista completa con información contextual al hacer clic en "Ver".
 
-Múltiples formatos soportados
+Múltiples formatos soportados.
 
-Almacenamiento en base de datos
+Almacenamiento directo en la base de datos (BLOB).
 
 Para ver imagen completa:
 
-Cargar imagen primero
+Cargar una pieza que contenga imágenes.
 
-Botón "Ver" se habilita automáticamente
+El botón "Ver" se habilitará automáticamente.
 
-Click para abrir ventana de visualización ampliada
+Click en "Ver" para abrir la ventana de visualización ampliada (como se muestra en la imagen).
 
 🔧 Características Técnicas
 Base de Datos
-sql
+Esquema principal de la tabla piezas.
+
+SQL
+
 CREATE TABLE piezas (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     id_pieza TEXT NOT NULL UNIQUE,
@@ -172,74 +171,74 @@ CREATE TABLE piezas (
     imagen1 BLOB,
     imagen2 BLOB,
     imagen3 BLOB
-)
+);
 Validaciones Implementadas
-✅ ID Pieza único y obligatorio
-
-✅ Cantidad debe ser numérica
-
-✅ Prevención de duplicados
-
-✅ Manejo de errores de conexión
-
-✅ Validación de formatos de imagen
+✅ ID Pieza único y obligatorio. ✅ Cantidad debe ser un valor numérico. ✅ Prevención de duplicados al registrar. ✅ Manejo de errores de conexión a la base de datos. ✅ Validación de formatos de imagen al cargar.
 
 Búsqueda y Filtrado
-🔍 Búsqueda en tiempo real
-
-📊 Filtrado por múltiples criterios
-
-🔄 "Mostrar Todos" para resetear vista
-
-📱 Interfaz responsive
+🔍 Búsqueda en tiempo real en la tabla. 📊 Filtrado por múltiples criterios (Línea, Equipo, Tipo, Material). 🔄 Botón "Mostrar Todos" para resetear la vista de la tabla.
 
 🎯 Flujo de Trabajo Recomendado
+Plaintext
+
 Para Nuevos Registros:
-text
 Ingresar ID → Completar datos → Agregar imágenes → Guardar
+Plaintext
+
 Para Modificaciones:
-text
-Consultar → Verificar datos → Modificar → Actualizar
+Consultar (por ID o tabla) → Verificar datos → Modificar campos → Actualizar
+Plaintext
+
 Para Eliminación:
-text
-Consultar → Verificar → Eliminar → Confirmar
+Consultar (por ID o tabla) → Verificar pieza → Eliminar → Confirmar
 ⚠️ Solución de Problemas
 Error: "Ya existe una pieza con el mismo ID"
-Solución: Utilizar un ID diferente único
+
+Solución: Utilizar un ID Pieza diferente que sea único.
 
 Error: "El campo Cantidad debe ser numérico"
-Solución: Ingresar solo números en campo cantidad
+
+Solución: Ingresar solo números en el campo Cantidad.
 
 Error: "No se pudo cargar la imagen"
-Solución: Verificar formato del archivo (JPG, PNG, BMP, GIF)
+
+Solución: Verificar que el formato del archivo sea uno de los soportados (JPG, PNG, BMP, GIF) y que el archivo no esté corrupto.
 
 Error de conexión a base de datos
-Solución: Verificar que la ruta de la BD sea accesible
 
-python
+Solución: Verificar que la ruta en conexion.py sea accesible, especialmente si es una unidad de red.
+
+Python
+
 # Verificar esta ruta en conexion.py
 conexion = sqlite3.connect(r"\\LEONARDOFRANCO\PiezasDB\Piezas.db")
 📞 Soporte
-Información de Versión
 Versión: 1.0
 
 Desarrollador: Leonardo Franco Pérez
 
 Empresa: Heineken
 
-Acceso a Información
-Menú Archivo → Versión - Información de desarrollo
+Acceso a Información:
 
-Menú Archivo → Salir - Cerrar aplicación
+Menú Archivo → Versión - Muestra información de desarrollo.
+
+Menú Archivo → Salir - Cierra la aplicación de forma segura.
 
 🔄 Mantenimiento
-Limpieza Regular
-Usar "Limpiar Campos" para resetear formulario
+Limpieza Regular: Usar el botón "Limpiar Campos" para resetear el formulario y comenzar un nuevo registro.
 
-"Mostrar Todos" para actualizar vista de tabla
+Backup de Datos: Se recomienda realizar una copia de seguridad regular del archivo Piezas.db, que se encuentra en la ruta configurada en conexion.py.
 
-Backup de Datos
-Realizar copia regular del archivo Piezas.db
+✅ Estado del Proyecto
+[x] CRUD Completo - Funcional
 
-La base de datos se encuentra en la ruta configurada
+[x] Gestión de Imágenes - Operativo
 
+[x] Búsqueda Avanzada - Implementada
+
+[x] Validaciones - Completas
+
+[x] Interfaz de Usuario - Optimizada
+
+[x] Manejo de Errores - Robustecido
