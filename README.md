@@ -1,4 +1,4 @@
-<h1 align="center"> Sistema de Gestión de Piezas - Heineken</h1>
+<img width="853" height="626" alt="image" src="https://github.com/user-attachments/assets/cdb30fd9-4f2d-4dc0-ba2c-d73af85ca3bb" /><h1 align="center"> Sistema de Gestión de Piezas - Heineken</h1>
 
 <p align="center">
  <b>Sistema completo de gestión de inventario de piezas</b> desarrollado para <b>Heineken</b>, que permite registrar, consultar, actualizar y eliminar piezas con soporte para imágenes y búsqueda avanzada.
@@ -130,13 +130,13 @@ imagen	BLOB	Imagen en formato binario
 **Diseño profesional con ttk**
 **Compatible con Windows, macOS y Linux**
 ## Desarrollado en Guadalajara, Jalisco
-###Autor
 
+## Autor
 
-Leonardo Franco Pérez
-📍 Guadalajara, Jalisco
-🎓 Ingeniería Mecatrónica — CETI
-📧 leofranco300@gmail.com
+**Leonardo Franco Pérez**
+**📍 Guadalajara, Jalisco**
+**🎓 Ingeniería Mecatrónica — CETI**
+**📧 leofranco300@gmail.com**
 
 ## Créditos
 
