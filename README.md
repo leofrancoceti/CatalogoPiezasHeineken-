@@ -1,4 +1,4 @@
-<img width="853" height="626" alt="image" src="https://github.com/user-attachments/assets/cdb30fd9-4f2d-4dc0-ba2c-d73af85ca3bb" /><h1 align="center"> Sistema de Gestión de Piezas - Heineken</h1>
+<h1 align="center"> Sistema de Gestión de Piezas - Heineken</h1>
 
 <p align="center">
  <b>Sistema completo de gestión de inventario de piezas</b> desarrollado para <b>Heineken</b>, que permite registrar, consultar, actualizar y eliminar piezas con soporte para imágenes y búsqueda avanzada.
